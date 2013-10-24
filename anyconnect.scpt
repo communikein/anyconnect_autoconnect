@@ -11,8 +11,8 @@ repeat until application "Cisco AnyConnect Secure Mobility Client" is running
 	delay 1
 end repeat
 tell application "System Events"
-	repeat until (window 1 of process "Cisco AnyConnect Secure Mobility Client" exists)
-		delay 1
+    repeat until (window 1 of process "Cisco AnyConnect Secure Mobility Client" exists)
+	    delay 1
 	end repeat
 	tell process "Cisco AnyConnect Secure Mobility Client"
 		keystroke ("vpn.example.com" as string)
