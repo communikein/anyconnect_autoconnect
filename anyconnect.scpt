@@ -5,7 +5,7 @@
 -- 5. Enjoy being connected
 
 tell application "Cisco AnyConnect Secure Mobility Client"
-	activate
+    activate
 end tell
 repeat until application "Cisco AnyConnect Secure Mobility Client" is running
 	delay 1
