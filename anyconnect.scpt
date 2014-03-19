@@ -1,10 +1,12 @@
 -- 1. Place in ~/Library/Scripts and enable the Applescript menu via the Applescript Editor
-      -- a. Export to .app so to run from spotlight
+      -- a. Export to .app to run from spotlight
 -- 2. Substitute "vpn.example.com" and "redacted" for your VPN server and password
 -- 3. Open Security & Privacy System Preferences, go to Privacy, Accessibility
--- 4. Enable Applescript Editor and System UI Server (Or for this .app if so exported)
--- 5. Trigger script from the menu
+-- 4. Enable Applescript Editor and System UI Server (or for this .app if so exported)
+-- 5. Trigger script from the menu (or run from spotlight)
 -- 6. Enjoy being connected
+-- 7. Run script again to close connection
+
 
 -- AnyConnect now refered to as targetApp
 set targetApp to "Cisco AnyConnect Secure Mobility Client"
