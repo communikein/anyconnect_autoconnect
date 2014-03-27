@@ -43,13 +43,5 @@ else
 			keystroke return
 		end tell
 		
-		-- Wait for third window to open. Accept.
-		repeat until (window 3 of process targetApp exists)
-			delay 1
-		end repeat
-		tell process targetApp
-			keystroke return
-		end tell
-		
 	end tell
 end if
