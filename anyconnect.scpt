@@ -1,5 +1,5 @@
 -- 1. Place in ~/Library/Scripts and enable the Applescript menu via the Applescript Editor
-      -- a. Export to .app to run from spotlight
+--    (Or export to .app to run from spotlight.)
 -- 2. Substitute "vpn.example.com" and "redacted" for your VPN server and password
 -- 3. Open Security & Privacy System Preferences, go to Privacy, Accessibility
 -- 4. Enable Applescript Editor and System UI Server (or for this .app if so exported)
@@ -29,9 +29,12 @@ else
 	end tell
 	
 	tell application "System Events"
+		-- Wait for first window to open. Do nothing.
 		repeat until (window 1 of process targetApp exists)
 			delay 1
 		end repeat
+		
+		-- Wait for second window to open. Enter password.
 		repeat until (window 2 of process targetApp exists)
 			delay 2
 		end repeat
@@ -39,5 +42,14 @@ else
 			keystroke ("redacted" as string)
 			keystroke return
 		end tell
+		
+		-- Wait for third window to open. Accept.
+		repeat until (window 3 of process targetApp exists)
+			delay 1
+		end repeat
+		tell process targetApp
+			keystroke return
+		end tell
+		
 	end tell
 end if
