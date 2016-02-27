@@ -44,7 +44,7 @@ else
 		end tell
 		
 		-- Autoclick on "Accept" of AnyConnect Banner window. If you have no welcome banner that needs acceptance, comment out these lines to the first "end tell" below
-		repeat until (window 2 of process targetApp exists)
+		repeat until (window "Cisco AnyConnect - Banner" of process targetApp exists)
 			delay 2
 		end repeat
 		tell process targetApp
