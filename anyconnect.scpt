@@ -31,7 +31,12 @@ else
 			delay 1
 		end repeat
 		
-		-- Wait for second window to open and then enter automatically enter password extracted from your Keychain
+--		You may need to uncomment below if your OpenConnect implementation requires a keystroke to accept the default VPN		
+--		tell process targetApp
+--       	    keystroke return
+--		end tell
+		
+		-- Wait for second window to open and then automatically enter password extracted from your Keychain
 		repeat until (window 2 of process targetApp exists)
 			delay 2
 		end repeat
