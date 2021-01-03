@@ -28,7 +28,7 @@ else
 	tell application "System Events"
 		-- Wait for first window to open. Do nothing.
 		repeat until (window 1 of process targetApp exists)
-			delay 1
+			delay 0.1
 		end repeat
 		
 --		You may need to uncomment below if your OpenConnect implementation requires a keystroke to accept the default VPN		
@@ -38,7 +38,7 @@ else
 		
 		-- Wait for second window to open and then automatically enter password extracted from your Keychain
 		repeat until (window 2 of process targetApp exists)
-			delay 2
+			delay 0.1
 		end repeat
 		tell process targetApp
 			-- This is where the the password in the Keychain is accessed for use as input rather than being hardcoded as plain text in other versions of this script out in the wild 
@@ -51,7 +51,7 @@ else
 		
 		-- Autoclick on "Accept" of AnyConnect Banner window. If you have no welcome banner that needs acceptance, comment out these lines to the first "end tell" below
 		repeat until (window "Cisco AnyConnect - Banner" of process targetApp exists)
-			delay 2
+			delay 0.1
 		end repeat
 		tell process targetApp
 			keystroke return
