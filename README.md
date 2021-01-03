@@ -5,7 +5,7 @@ This script will automatically fetch, from the KeyChain, the correct credentials
 
 # macOS only
 The script is targeted at those users that will be presented with the following login prompt after selecting the VPN connection
-![login credentials prompt](https://github.com/communikein/anyconnect_autoconnect/tree/master/guide/screenshots/login-credentials-prompt.jpg?raw=true)
+<img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/login-credentials-prompt.jpg" width=50% height=50%>
 
 # Cisco employees
 If you are a Cisco employee, you need to update the code as follows:
