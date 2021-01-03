@@ -36,15 +36,17 @@ else
 		--     keystroke return
 		-- end tell
 		
-		-- Wait for second window to open and then automatically enter password extracted from your Keychain
-		repeat until (window 2 of process targetApp exists)
+		-- Wait for "Cisco AnyConnect Login" window to open and then automatically enter password extracted from your Keychain
+		repeat until (window "Cisco AnyConnect Login" of process targetApp exists)
 			delay 0.1
 		end repeat
+		
+		-- This is where the the password in the Keychain is accessed for use as input rather than being hardcoded as plain text in other versions of this script out in the wild 
 		tell process targetApp
-			-- This is where the the password in the Keychain is accessed for use as input rather than being hardcoded as plain text in other versions of this script out in the wild 
 			delay 4
-			set inString to "WHATEVER_AnyConnect_VPN"
+			set inString to "YOUR_KEYCHAIN_PASSWORD_NAME" -- NOT your actual password
 			set PSWD to do shell script "/usr/bin/security find-generic-password -wl " & quoted form of inString
+
 			keystroke PSWD as text
 			keystroke return
 		end tell
