@@ -41,9 +41,13 @@ else
 			delay 0.1
 		end repeat
 		
+		-- Wait for "Cisco AnyConnect Login" window to complete loading
+		repeat until (button "Log in" of group 2 of group 3 of UI element of scroll area 1 of group 1 of group 1 of window "Cisco AnyConnect Login" of process "Cisco AnyConnect Secure Mobility Client" exists)
+			delay 0.1
+		end repeat
+		
 		-- This is where the the password in the Keychain is accessed for use as input rather than being hardcoded as plain text in other versions of this script out in the wild 
 		tell process targetApp
-			delay 4
 			set inString to "YOUR_KEYCHAIN_PASSWORD_NAME" -- NOT your actual password
 			set PSWD to do shell script "/usr/bin/security find-generic-password -wl " & quoted form of inString
 
