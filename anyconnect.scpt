@@ -1,4 +1,4 @@
--- 1. Create a new generic password entry in Keychain Access called "WHATEVER_AnyConnect_VPN" (the name in Keychain access must match that in line 39 below) with your password for the Cisco AnyConnect VPN server.  
+-- 1. Create a new generic password entry in Keychain Access called "WHATEVER_AnyConnect_VPN" (the name in Keychain access must match that in line 51 below) with your password for the Cisco AnyConnect VPN server.  
 -- 2. Open this script in Script Editor (both this and the above are in the Applications->Utilities folder) and "Save as.." an Application (.app) with desired name.
 -- 3. Open Security & Privacy System Preferences, go to Privacy, Accessibility.
 -- 4. Enable the above .app so it can access Accessibility
@@ -48,9 +48,12 @@ else
 		
 		-- This is where the the password in the Keychain is accessed for use as input rather than being hardcoded as plain text in other versions of this script out in the wild 
 		tell process targetApp
-			set inString to "YOUR_KEYCHAIN_PASSWORD_NAME" -- NOT your actual password
+			set inString to "YOUR_VPN_KEYCHAIN_PASSWORD_NAME" -- NOT your actual password
+			set username to "YOUR_VPN_USERNAME"
 			set PSWD to do shell script "/usr/bin/security find-generic-password -wl " & quoted form of inString
-
+			
+			keystroke username as text
+			keystroke tab
 			keystroke PSWD as text
 			keystroke return
 		end tell
