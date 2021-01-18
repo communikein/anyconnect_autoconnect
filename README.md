@@ -34,11 +34,20 @@ These are the requirements necessary:
 - Users are presented with the following login prompt after selecting the VPN connection
 <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/login-credentials-prompt.jpg" width=50% height=50%>
 
-# How to compile the script into an application?
-These are the simple steps to follow:
+# How to use it?
+First things first. To start, you need to create the actual application from the script source code as follows:
 1. Open the script source code file ```anyconnect.scpt``` with Script Editor (which is the default program used).
 2. On the top menu, select ```File```, then ```Export...``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-01.jpg" width=50% height=50%>
 3. In the pop-up window, make sure to select ```Application``` for ```File Format:```, and ```Sign to Run Locally``` for ```Code Sign:``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-02.jpg" width=50% height=50%>
+4. (BONUS) You want to use a different icon from the stock one? Follow the steps below to extract the icon from another app and use it:
+- [How to extract any app icon](https://www.idownloadblog.com/2014/07/22/howto-export-mac-icons-png-files/)
+- [How to edit any app icon](https://www.howtogeek.com/677739/how-to-change-app-file-and-folder-icons-on-mac/)
+
+Once you have your application compiled and ready:
+5. Open ```Security & Privacy System Preferences```, go to ```Privacy```, then ```Accessibility```.
+6. Enable the application you just created to access Accessibility
+7. (BONUS) Add the application to ```/Users/[yourshortname]/Applications``` and then to the Dock 
+8. Run the application again to close the connection
 
 # Extra tips for Cisco employees
 If you are a Cisco employee, you can simply update the code as follows:
