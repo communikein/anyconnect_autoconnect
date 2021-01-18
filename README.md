@@ -30,7 +30,7 @@ The script automatically fetches, securely from the KeyChain, the correct creden
 These are the requirements necessary:
 - macOS version 10.7 or higher
 - Cisco AnyConnect must have _Start VPN when AnyConnect is started_ enabled (see below)
-<br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/anyconnect-preferences.jpg">
+<br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/anyconnect-preferences.jpg" width=50% height=50%>
 - Users are presented with the following login prompt after selecting the VPN connection
 <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/login-credentials-prompt.jpg" width=50% height=50%>
 
