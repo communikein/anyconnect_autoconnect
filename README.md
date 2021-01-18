@@ -44,10 +44,10 @@ First things first. To start, you need to create the actual application from the
 - [How to edit any app icon](https://www.howtogeek.com/677739/how-to-change-app-file-and-folder-icons-on-mac/)
 
 Once you have your application compiled and ready:
-5. Open ```Security & Privacy System Preferences```, go to ```Privacy```, then ```Accessibility```.
-6. Enable the application you just created to access Accessibility
-7. (BONUS) Add the application to ```/Users/[yourshortname]/Applications``` and then to the Dock 
-8. Run the application again to close the connection
+1. Open ```Security & Privacy System Preferences```, go to ```Privacy```, then ```Accessibility```.
+2. Enable the application you just created to access Accessibility
+3. (BONUS) Add the application to ```/Users/[yourshortname]/Applications``` and then to the Dock 
+4. Run the application again to close the connection
 
 # Extra tips for Cisco employees
 If you are a Cisco employee, you can simply update the code as follows:
