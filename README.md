@@ -34,7 +34,7 @@ These are the requirements necessary:
 - Users are presented with the following login prompt after selecting the VPN connection
 <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/login-credentials-prompt.jpg" width=50% height=50%>
 
-# How to compile the script into an application?
+# How to compile the script into an application?
 These are the simple steps to follow:
 1. Open the script source code file ```anyconnect.scpt``` with Script Editor (which is the default program used).
 2. On the top menu, select ```File```, then ```Export...``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-01.jpg" width=50% height=50%>
