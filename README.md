@@ -35,7 +35,11 @@ These are the requirements necessary:
 <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/login-credentials-prompt.jpg" width=50% height=50%>
 
 # How to use it?
-First things first. To start, you need to create the actual application from the script source code as follows:
+You have two options:
+- Turn it into an application
+- Keep it as a script
+
+Let's start with the first option: TURN IT INTO AN APPLICATION
 1. Open the script source code file ```anyconnect.scpt``` with Script Editor (which is the default program used).
 2. On the top menu, select ```File```, then ```Export...``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-01.jpg" width=50% height=50%>
 3. In the pop-up window, make sure to select ```Application``` for ```File Format:```, and ```Sign to Run Locally``` for ```Code Sign:``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-02.jpg" width=50% height=50%>
@@ -46,8 +50,17 @@ First things first. To start, you need to create the actual application from the
 Once you have your application compiled and ready:
 1. Open ```Security & Privacy System Preferences```, go to ```Privacy```, then ```Accessibility```.
 2. Enable the application you just created to access Accessibility
-3. (BONUS) Add the application to ```/Users/[yourshortname]/Applications``` and then to the Dock 
+3. (BONUS) Add the application to ```/Users/[yourhostname]/Applications``` and then to the Dock 
 4. Run the application again to close the connection
+
+Now for the second option: KEEP IT AS A SCRIPT
+1. Open the script source code file ```anyconnect.scpt``` with Script Editor (which is the default program used).
+2. On the top menu, select ```Script Editor```, then click ```Preferences```
+3. In the pop-up window, make sure to select ```Show Script menu in menu bar``` for ```Script Menu:``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-03.jpg" width=50% height=50%>
+4. Save the script in your user's Scripts folder (```/Users/[yourhostname]/Library/Scripts```)
+
+Once you have saved the script inside your user's script folder:
+1. Select the scroll looking icon in the top menu and click on the script you saved.<br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-04.jpg" width=50% height=50%>
 
 # Known issues
 - *macOS Big Sur*: If you recently updated to macOS Big Sur, and you haven't done so yet, you might need to reset the SMC. Here is a link on [how to do that](https://www.howtogeek.com/312086/how-and-when-to-reset-the-smc-on-your-mac/).
