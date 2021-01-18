@@ -39,8 +39,8 @@ else
 		
 		-- This is where the the password in the Keychain is accessed for use as input rather than being hardcoded as plain text in other versions of this script out in the wild 
 		tell process targetApp
-			set inString to "YOUR_VPN_KEYCHAIN_PASSWORD_NAME" -- NOT your actual password
-			set username to "YOUR_VPN_USERNAME"
+			set inString to "YOUR_KEYCHAIN_CREDENTIALS_NAME" -- NOT your actual password
+			set username to "YOUR_USERNAME"
 			set PSWD to do shell script "/usr/bin/security find-generic-password -wl " & quoted form of inString
 			
 			keystroke username as text
