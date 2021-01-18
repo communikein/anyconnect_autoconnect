@@ -26,13 +26,19 @@ The repository contains the source code of the script that will automate the con
 
 The script automatically fetches, securely from the KeyChain, the correct credentials and setup the VPN connection. If Duo is used as MFA, a notification will be sent to your device. Once you confirm the notification the connection will be completed and up and running.
 
-# Who can take advantage of this?
+# Can I take advantage of this?
 These are the requirements necessary:
 - macOS version 10.7 or higher
 - Cisco AnyConnect must have _Start VPN when AnyConnect is started_ enabled (see below)
 <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/anyconnect-preferences.jpg" width=50% height=50%>
 - Users are presented with the following login prompt after selecting the VPN connection
 <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/login-credentials-prompt.jpg" width=50% height=50%>
+
+# How to compile the script into an application?
+These are the simple steps to follow:
+1. Open the script source code file ```anyconnect.scpt``` with Script Editor (which is the default program used).
+2. On the top menu, select ```File```, then ```Export...``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-01.jpg" width=50% height=50%>
+3. In the pop-up window, make sure to select ```Application``` for ```File Format:```, and ```Sign to Run Locally``` for ```Code Sign:``` <br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-02.jpg" width=50% height=50%>
 
 # Extra tips for Cisco employees
 If you are a Cisco employee, you can simply update the code as follows:
