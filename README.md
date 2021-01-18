@@ -49,6 +49,9 @@ Once you have your application compiled and ready:
 3. (BONUS) Add the application to ```/Users/[yourshortname]/Applications``` and then to the Dock 
 4. Run the application again to close the connection
 
+# Known issues
+- *macOS Big Sur*: If you recently updated to macOS Big Sur, and you haven't done so yet, you might need to reset the SMC. Here is a link on [how to do that](https://www.howtogeek.com/312086/how-and-when-to-reset-the-smc-on-your-mac/).
+
 # Extra tips for Cisco employees
 If you are a Cisco employee, you can simply update the code as follows:
 - update line ```42``` to: ```set inString to "blizzard"```
