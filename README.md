@@ -51,5 +51,5 @@ Once you have your application compiled and ready:
 
 # Extra tips for Cisco employees
 If you are a Cisco employee, you can simply update the code as follows:
-- update line ```51``` to: ```set inString to "blizzard"```
-- use your CEC ID for the username. If your corporate email is ```mrossi@cisco.com```, then simply update line ```52``` to: ```set username to "mrossi"```
+- update line ```42``` to: ```set inString to "blizzard"```
+- use your CEC ID for the username. If your corporate email is ```mrossi@cisco.com```, then simply update line ```43``` to: ```set username to "mrossi"```
