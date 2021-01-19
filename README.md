@@ -60,7 +60,10 @@ Now for the second option: KEEP IT AS A SCRIPT
 4. Save the script in your user's Scripts folder (```/Users/[yourhostname]/Library/Scripts```)
 
 Once you have saved the script inside your user's script folder:
-1. Select the scroll looking icon in the top menu and click on the script you saved.<br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-04.jpg" width=50% height=50%>
+1. Open ```Security & Privacy System Preferences```, go to ```Privacy```, then ```Accessibility```.
+2. Enable ```Script Menu```
+3. (OPTIONAL) Enable ```Script Editor```. This is required if you want to run the script from the Script Editor.<br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-05.jpg" width=50% height=50%>
+4. Select the scroll looking icon in the top menu and click on the script you saved.<br /><img src="https://github.com/communikein/anyconnect_autoconnect/blob/master/guide/screenshots/compile-code-04.jpg" width=50% height=50%>
 
 # Known issues
 - *macOS Big Sur*: If you recently updated to macOS Big Sur, and you haven't done so yet, you might need to reset the SMC. Here is a link on [how to do that](https://www.howtogeek.com/312086/how-and-when-to-reset-the-smc-on-your-mac/).
