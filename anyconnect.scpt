@@ -33,7 +33,7 @@ else
 		end repeat
 		
 		-- Wait for "Cisco AnyConnect Login" window to complete loading
-		repeat until (button "Log in" of group 2 of group 3 of UI element of scroll area 1 of group 1 of group 1 of window "Cisco AnyConnect Login" of process "Cisco AnyConnect Secure Mobility Client" exists)
+		repeat until (button "Log in" of group 2 of group 4 of UI element 1 of scroll area 1 of group 1 of group 1 of window "Cisco AnyConnect Login" of application process targetApp exists)
 			delay 0.1
 		end repeat
 		
