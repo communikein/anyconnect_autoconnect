@@ -39,8 +39,9 @@ else
 		
 		-- This is where the the password in the Keychain is accessed for use as input rather than being hardcoded as plain text in other versions of this script out in the wild 
 		tell process targetApp
-			set credentialsID to "Enterprise Connect"
-			set username to "YOUR_CISCO_EMAIL" -- like "grossi@cisco.com"
+			set credentialsID to "Enterprise Connect" -- NOT your actual password
+			
+			set username to do shell script "/usr/bin/security find-generic-password -l " & quoted form of credentialsID & " | grep 'acct' | awk '{split($1,a,\"=\"); print substr(a[2],2,length(a[2])-2)}'"
 			set PSWD to do shell script "/usr/bin/security find-generic-password -wl " & quoted form of credentialsID
 			
 			keystroke username as text
