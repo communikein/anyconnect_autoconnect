@@ -69,6 +69,4 @@ Once you have saved the script inside your user's script folder:
 - *macOS Big Sur*: If you recently updated to macOS Big Sur, and you haven't done so yet, you might need to reset the SMC. Here is a link on [how to do that](https://www.howtogeek.com/312086/how-and-when-to-reset-the-smc-on-your-mac/).
 
 # Extra tips for Cisco employees
-If you are a Cisco employee, you can simply update the code as follows:
-- update line ```42``` to: ```set inString to "blizzard"```
-- use your Cisco email as the username. If your corporate email is ```mrossi@cisco.com```, then simply update line ```43``` to: ```set username to "mrossi@cisco.com"```
+If you are a Cisco employee, you can simply download the ```anyconnect-cisco.scpt``` without the need to edit anything in the code :)
